@@ -4,6 +4,7 @@ const postCSSPlugins = [
      require('postcss-mixins'),
      require('postcss-simple-vars'),
      require('postcss-nested'),
+     require('postcss-hexrgba'),
      require('autoprefixer')
 ];
 module.exports = {
@@ -17,8 +18,8 @@ module.exports = {
                server._watch('./app/**/*.html');
           },
           contentBase: path.join(__dirname, 'app'),
-          hot: true,
           port: 3000,
+          hot: true,
           host: '0.0.0.0'
      },
      mode: 'development',
