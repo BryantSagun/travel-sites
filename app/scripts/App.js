@@ -3,8 +3,10 @@ import 'lazysizes';
 import MobileMenu from './modules/MobileMenu.js';
 import RevealOnScroll from './modules/RevealOnScroll.js';
 import StickyHeader from './modules/StickyHeader.js';
+import ClientArea from './modules/ClientArea.js';
 
 let modal;
+new ClientArea();
 new MobileMenu();
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
